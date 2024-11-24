@@ -8,17 +8,7 @@
         </div>
 	 </div>
 
-        // Show the popup when the page loads
-         window.onload = function () {
-         const popup = document.getElementById("popup");
-         popup.style.display = "block";
-        };
-
-// Close the popup when the close button is clicked
-document.querySelector(".close-btn").onclick = function () {
-  const popup = document.getElementById("popup");
-  popup.style.display = "none";
-};
+        
 	</head>
 	<body style="background-color: black;">
 		<h1 style="color: red";>Welcome to my website</H1>
@@ -28,7 +18,19 @@ document.querySelector(".close-btn").onclick = function () {
 			
 		<a href="page3.html">
 			<b style="color: red">My favourite yiff</b>
-	
+
+<script>			
+window.onload = function () {
+  const popup = document.getElementById("popup");
+  popup.style.display = "block";
+};
+
+// Close the popup when the close button is clicked
+document.querySelector(".close-btn").onclick = function () {
+  const popup = document.getElementById("popup");
+  popup.style.display = "none";
+};
+</script>
 	</body>
 
 </html>
